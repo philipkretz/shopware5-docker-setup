@@ -1,5 +1,5 @@
 php-apache:
-  build: ./php/
+  build: .
   ports:
     - 8000:80
   links:
