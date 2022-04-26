@@ -1,11 +1,12 @@
 php-apache:
-  build: .
+  build: ./php/
   ports:
     - 8000:80
   links:
     - mysql
   volumes:
     - ./www:/var/www/html
+    - ./apache2.conf:/etc/apache2/apache2.conf
 
 mysql:
   image: mysql:latest
