@@ -23,6 +23,7 @@ data:
   image: mysql:latest
   volumes:
     - /var/lib/mysql
+    - ./www:/var/www/html
   command: "true"
 
 phpmyadmin:
